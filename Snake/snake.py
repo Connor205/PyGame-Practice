@@ -5,16 +5,16 @@ import os
 
 pygame.init()
 
-HEIGHT = 450
-WIDTH = 400
-ACC = 0.5
-FRIC = -0.12
+HEIGHT = 400
+WIDTH = 600
 FPS = 60
 
-framesPerSecond = pygame.time.Clock()
+frames_per_second = pygame.time.Clock()
 
 displaysurface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Game")
+
+class 
 
 
 class Player(pygame.sprite.Sprite):
@@ -56,7 +56,6 @@ def main():
     all_sprites = pygame.sprite.Group()
     all_sprites.add(pt_1)
     all_sprites.add(p_1)
-
     running = True
     while running:
         for event in pygame.event.get():
@@ -73,7 +72,7 @@ def main():
             displaysurface.blit(entity.surf, entity.rect)
 
         pygame.display.update()
-        framesPerSecond.tick(FPS)
+        frames_per_second.tick(FPS)
     pygame.quit()
 
 
